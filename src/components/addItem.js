@@ -10,10 +10,6 @@ function AddItem(props)
     const [transactionType, settransactionType] = useState("");
 
     const add = (()=>{
-        
-        console.log(item)
-        console.log(amount);
-        console.log(transactionType);
 
         props.add(amount, item, transactionType);
 
@@ -21,6 +17,8 @@ function AddItem(props)
     return(
     
         <div>
+
+            <h1 style={{paddingTop:"5px"}}>Add Transaction</h1>
             <input placeholder="Enter Item" 
                    onChange={(e) => setItem(e.target.value)} 
             />{" "}

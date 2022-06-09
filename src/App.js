@@ -2,8 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 import React, {useState} from 'react'
-import AddItem from './components/addItem'
-import DisplayTransaction from './components/displayTransaction';
+import Home from './components/home';
+import Login from './components/login';
+import SignUp from './components/signUp';
+
+import {BrowserRouter as Router , Switch, Route} from 'react-router-dom'
+
 
 function App() {
 
@@ -22,14 +26,24 @@ function App() {
 
 
   return (
-    <div className="container">
+
+    <Router>
+
+      <Switch>
+
+        <Route exact path="/" component={Login}></Route>
+        <Route path="/sign-up" component={SignUp}></Route>
+
+        <Route path="/home">
+            <Home  list={transaction} add = {addTransaction} />
+        
+        </Route>
+
+      </Switch>
       
-      <DisplayTransaction list={transaction} /> 
-      <AddItem   add = {addTransaction}/>
 
-
-
-    </div>
+    </Router>
+    
   );
 }
 
