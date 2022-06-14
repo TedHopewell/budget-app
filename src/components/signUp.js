@@ -34,7 +34,7 @@ function SignUp(){
 
             <input type="password" placeholder="Enter your password"   onChange={(e)=>setPassword(e.target.value)}/>
 
-            <button onClick={Register}>Sign Up </button>
+            <button id='btnSignup' onClick={Register}>Sign Up </button>
         </div>
     )
 }

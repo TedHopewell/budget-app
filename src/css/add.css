@@ -18,8 +18,17 @@ select{
 }
 
 #btn{
+    border-radius: 20px;
+    border: none;
     margin-left: 50px;
     margin-top: 15px;
     width: 200px;
     height: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#btn:hover
+{
+    background-color: rgb(143, 224, 143);
 }

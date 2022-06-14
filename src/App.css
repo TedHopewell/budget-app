@@ -15,3 +15,31 @@ body{
   align-items: center;
   height: 800px;
 }
+
+#btnLogin
+{
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#btnLogin:hover
+{
+  background-color: rgb(143, 224, 143);
+}
+
+#btnSignup
+{
+  border: none;
+  border-radius: 20px;
+  margin-top: 10%;
+  width: 200px;
+  height: 30px;
+  cursor:pointer ;
+}
+
+#btnSignup:hover
+{
+  background-color: rgb(143, 224, 143);
+}
+

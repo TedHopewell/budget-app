@@ -8,12 +8,12 @@
 }
 
 .expense-line{
-    border-right: 4px solid red;
+    border-right: 10px solid red;
     margin-left: 120px;
 }
 
 .income-line
 {
-    border-right: 4px solid green;
+    border-right: 10px solid green;
     margin-left: 120px;
 }

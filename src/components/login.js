@@ -37,15 +37,23 @@ function Login(){
             <input type="password" placeholder="Enter your password"   
                 onChange={(e)=> setPassword(e.target.value)}/>
 
-            <button style={btn} onClick={login}>Login </button>
+            <button id="btnLogin" style={btn} onClick={login}>Login </button>
 
-            <span>Don't have an account?</span> <span>
+            <span>Don't have an account?</span> 
+                <span>
 
                 <Link to="/sign-up">Create account here...</Link>
 
             
-                </span>
-        </div>
+            </span>
+            <span>Forgot Password?</span> 
+                <span>
+
+                <Link to="/sign-up">Retrieve password here...</Link>
+
+
+                </span>    
+            </div>
     )
 }
 
